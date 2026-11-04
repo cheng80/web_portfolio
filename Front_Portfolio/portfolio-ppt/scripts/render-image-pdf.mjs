@@ -165,7 +165,7 @@ async function main() {
           force(deck, 'padding', '0');
           force(deck, 'transform', 'none');
           const slide = document.querySelector('.slide');
-          force(slide, 'display', 'grid');
+          force(slide, 'display', slide.classList.contains('ai-case') ? 'block' : 'grid');
           force(slide, 'width', '1280px');
           force(slide, 'height', '720px');
           force(slide, 'min-width', '1280px');

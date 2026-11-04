@@ -6,7 +6,7 @@
 
 - `index.html`: 웹 포트폴리오와 슬라이드 포트폴리오로 이동하는 안내 페이지
 - `web-starter/index.html`, `web-starter/styles.css`: 스크롤형 웹 포트폴리오
-- `portfolio-ppt/index.html`, `portfolio-ppt/portfolio-ppt.css`: 18장 구성의 16:9 슬라이드 포트폴리오
+- `portfolio-ppt/index.html`, `portfolio-ppt/portfolio-ppt.css`: 23장 구성의 16:9 슬라이드 포트폴리오
 - 각 포트폴리오의 `assets/`: 해당 페이지에서 사용하는 스크린샷과 아이콘
 - `web-starter/src/data/portfolio-data.json`: 참고용 데이터 초안. 페이지에서 읽지 않으며 HTML과 자동 동기화되지 않는다.
 - `portfolio-ppt/scripts/render-image-pdf.mjs`: 슬라이드를 이미지 기반 PDF로 생성하는 기존 스크립트
@@ -61,3 +61,9 @@ node portfolio-ppt/scripts/render-image-pdf.mjs
 PDF 생성에는 macOS의 Google Chrome, 전역 `fetch`와 `WebSocket`을 지원하는 Node.js, Python 3 및 Pillow가 필요하다. 세부 실행 조건은 `README.md`를 확인한다.
 
 작업 결과에는 변경 내용과 실제 수행한 검증을 적고, 실행하지 못한 검증과 남은 제한을 명시한다.
+
+## AI 활용 개발 사례 유지 기준
+
+게임 소개 다음의 순서는 종합 소개 → 자동 플레이 검증 → 밸런스 분석 도구 → 카드 아트다. 웹과 슬라이드의 본문은 편집 가능한 HTML로 유지하며 각 페이지의 `assets/ai-workflow/`에 CSS와 이미지를 보존하고 변경 시 양쪽에 반영한다. 하단에는 해당 사례의 AI 활용 범위만 적고 역할 설명, 출처 주석, 면책 문구를 덧붙이지 않는다. 통계나 개선 수치를 만들지 않으며, 추가 사실은 `docs/AI_WORKFLOW_SOURCES.md`의 원본 근거를 확인한다.
+
+두 버전은 소개와 강조 순서만 다르게 유지한다. 공통 프로젝트의 사실, 본문, 출시 상태, 링크와 이미지는 같은 최신 내용으로 맞추며, 한쪽을 수정하면 다른 쪽도 함께 대조한다. AI 활용 4개 사례와 하단의 AI 활용 범위 문구도 네 산출물에서 동일하게 유지한다.

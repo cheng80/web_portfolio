@@ -116,7 +116,7 @@ img { display: block; max-width: 100%; }
 .slide-kicker { align-self: start; }
 
 h1, h2, h3, p { margin-top: 0; word-break: keep-all; }
-h1 { margin: 8px 0 4px; color: white; font-size: clamp(86px, 13vw, 176px); line-height: 0.92; letter-spacing: -0.06em; }
+h1 { margin: 8px 0 4px; color: white; font-size: 88px; line-height: 0.92; letter-spacing: -0.06em; }
 h2 { margin-bottom: 18px; color: var(--navy); font-size: clamp(38px, 4.9vw, 74px); line-height: 1.04; letter-spacing: -0.045em; }
 h3 { margin: 0 0 10px; color: var(--navy); font-size: clamp(19px, 2vw, 28px); line-height: 1.12; }
 p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line-height: 1.48; }
@@ -793,7 +793,7 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   }
 
   h1 {
-    font-size: 148px;
+    font-size: 88px;
   }
 
   h2 {
@@ -1004,7 +1004,7 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
     overflow: hidden !important;
   }
 
-  h1 { font-size: 148px !important; }
+  h1 { font-size: 88px !important; }
   h2 { font-size: 74px !important; line-height: 1.04 !important; }
   h3 { font-size: 26px !important; }
   p { font-size: 22px !important; }
@@ -1281,38 +1281,38 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   object-fit: contain;
 }
 
-#slide-13 {
+.tap-slide {
   grid-template-columns: minmax(0, 320px) minmax(0, 1fr) !important;
   gap: 30px !important;
   align-items: start !important;
 }
 
-#slide-13 .project-copy {
+.tap-slide .project-copy {
   max-width: 320px !important;
 }
 
-#slide-13 .project-copy h2 {
+.tap-slide .project-copy h2 {
   font-size: 68px !important;
   line-height: 1.02 !important;
 }
 
-#slide-13 .project-copy p {
+.tap-slide .project-copy p {
   font-size: 19px !important;
   line-height: 1.38 !important;
 }
 
-#slide-13 .bullet-grid {
+.tap-slide .bullet-grid {
   margin: 18px 0 !important;
 }
 
-#slide-13 .wide-board {
+.tap-slide .wide-board {
   align-self: start !important;
   width: 100% !important;
   margin-top: 40px !important;
   overflow: hidden !important;
 }
 
-#slide-13 .wide-board img {
+.tap-slide .wide-board img {
   width: 100% !important;
   height: auto !important;
   max-height: 520px !important;
@@ -1414,3 +1414,13 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   letter-spacing: -0.02em;
   white-space: nowrap;
 }
+
+/* A standalone Unity game case uses its original extracted project image. */
+.unity-game-slide { align-content: start; }
+.unity-case-layout { display: grid; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: 42px; align-items: start; }
+.unity-case-image { margin: 0; text-align: center; }
+.unity-case-image img { width: 100%; height: 540px; object-fit: contain; }
+.unity-case-image figcaption { margin-top: 10px; color: var(--muted); font-size: 14px; }
+.unity-game-slide h2 { font-size: 74px; }
+
+.hardware-slide .flow-cards span { word-break: keep-all !important; overflow-wrap: normal !important; }

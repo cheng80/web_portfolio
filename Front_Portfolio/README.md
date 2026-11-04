@@ -1,6 +1,6 @@
 # 김택권 프론트엔드 포트폴리오
 
-기존 이력서와 포트폴리오 PDF를 바탕으로 만든 정적 HTML/CSS 사이트입니다. 루트 안내 페이지에서 스크롤형 웹 포트폴리오와 18장 구성의 16:9 슬라이드 포트폴리오로 이동할 수 있습니다.
+기존 이력서와 포트폴리오 PDF를 바탕으로 만든 정적 HTML/CSS 사이트입니다. 루트 안내 페이지에서 스크롤형 웹 포트폴리오와 23장 구성의 16:9 슬라이드 포트폴리오로 이동할 수 있습니다.
 
 ## 로컬 실행
 
@@ -25,7 +25,7 @@ web-starter/
   src/data/portfolio-data.json      # 참고용 데이터 초안
   package.json                     # 웹 폴더만 제공하는 serve 명령
 portfolio-ppt/
-  index.html                       # 18장 슬라이드 본문
+  index.html                       # 23장 슬라이드 본문
   portfolio-ppt.css                # 화면 및 인쇄 스타일
   assets/                          # 슬라이드용 스크린샷과 아이콘
   scripts/render-image-pdf.mjs      # 슬라이드 이미지 기반 PDF 생성
@@ -73,3 +73,9 @@ node portfolio-ppt/scripts/render-image-pdf.mjs
 ## 이전 대화 기록
 
 `_archive/conversations/2026-07-16-001/`은 슬라이드, `2026-07-16-002/`는 웹 문구 윤문 기록입니다. 입력 원문, 수정본, 검토 JSON을 보존하며 현재 실행 파일로 사용하지 않습니다. 이 폴더는 Git에서 제외합니다. 현재 내용의 기준은 각 포트폴리오의 HTML과 원본 자료입니다.
+
+## AI 활용 개발 사례
+
+웹은 게임 섹션 다음, 슬라이드는 Stone Match 다음에 종합 소개, 자동 플레이 검증, 밸런스 분석 도구, 카드 아트 순서로 배치합니다. 제목과 본문은 편집 가능한 HTML이며, 각 하단에는 AI 활용 범위만 표시합니다. 밸런스 통계나 개선 수치는 사용하지 않습니다.
+
+각 페이지의 `assets/ai-workflow/`는 CSS, 설명용 SVG와 실제 생성 카드 이미지를 담습니다. 웹 폴더 단독 실행과 슬라이드 PDF 생성을 위해 양쪽에 같은 자료를 보존합니다. 이미지와 내용의 근거는 `docs/AI_WORKFLOW_SOURCES.md`에 정리했습니다.

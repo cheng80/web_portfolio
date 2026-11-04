@@ -156,7 +156,7 @@ p {
 h1 {
   margin-bottom: 10px;
   color: var(--navy);
-  font-size: clamp(76px, 10vw, 132px);
+  font-size: clamp(48px, 6vw, 76px);
   line-height: 0.95;
   letter-spacing: 0;
 }
@@ -949,7 +949,7 @@ h3 {
   }
 
   h1 {
-    font-size: 58px;
+    font-size: 48px;
   }
 
   h2 {
@@ -1655,7 +1655,7 @@ main {
 
 @media (max-width: 640px) {
   h1 {
-    font-size: clamp(64px, 22vw, 92px);
+    font-size: clamp(44px, 13vw, 56px);
   }
 
   h2 {
@@ -1885,3 +1885,11 @@ main {
 #company-work .work-grid.compact p {
   font-size: 16px;
 }
+
+/* Shared Unity game project. */
+.unity-game-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: 40px; align-items: center; padding: 30px; }
+.unity-game-shot { margin: 0; }
+.unity-game-shot img { display: block; width: 100%; height: auto; max-height: 600px; object-fit: contain; border-radius: 16px; }
+.unity-game-shot figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; text-align: center; }
+.unity-proof-list { padding-left: 20px; line-height: 1.9; }
+@media (max-width: 900px) { .unity-game-feature { grid-template-columns: 1fr; gap: 24px; } }
