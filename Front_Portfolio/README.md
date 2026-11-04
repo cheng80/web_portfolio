@@ -62,7 +62,9 @@ node portfolio-ppt/scripts/render-image-pdf.mjs
 
 ## 배포
 
-`main` 브랜치에 push하거나 GitHub Actions에서 수동 실행하면 상위 저장소의 `.github/workflows/pages.yml`이 정적 사이트로 배포합니다. 별도 빌드 단계는 없습니다.
+`main` 브랜치에 push하거나 GitHub Actions에서 수동 실행하면 저장소 루트의 `scripts/build-site.py`가 배포 파일을 `_site/`에 준비하고 검증 후 배포합니다. 공개 주소는 기존 `/web-starter/`와 `/portfolio-ppt/`를 사용하며 해당 주소에서 본문이 바로 열립니다. `Front_Portfolio/`는 소스 관리용이며 배포 파일을 직접 수정하지 않습니다.
+
+전체 포트폴리오를 배포 구조로 미리 보려면 저장소 루트에서 `python3 scripts/build-site.py`를 실행한 뒤 `python3 -m http.server 4173 --directory _site`로 확인합니다. 소스를 수정하면 준비 명령을 다시 실행합니다.
 
 ## 연락처
 

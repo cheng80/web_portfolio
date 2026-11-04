@@ -5,3 +5,5 @@ Front_Portfolio/_archive/
 .DS_Store
 Front_Portfolio/tmp/
 **/portfolio-ppt/output/slide-renders/
+_site/
+__pycache__/

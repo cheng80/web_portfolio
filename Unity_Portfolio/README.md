@@ -4,15 +4,18 @@ Unity 전반의 클라이언트 개발 경험을 우선하는 정적 HTML/CSS �
 
 ## 실행
 
-저장소 루트에서 실행합니다. 패키지 설치나 빌드는 필요하지 않습니다.
+저장소 루트에서 배포 파일을 준비한 뒤 실행합니다. 패키지 설치는 필요하지 않으며 소스를 수정하면 준비 명령을 다시 실행합니다.
 
 ```sh
-python3 -m http.server 4173
+python3 scripts/build-site.py
+python3 -m http.server 4173 --directory _site
 ```
 
 - 버전 안내: http://localhost:4173/Unity_Portfolio/
 - 웹: http://localhost:4173/Unity_Portfolio/web-starter/
 - 슬라이드: http://localhost:4173/Unity_Portfolio/portfolio-ppt/
+
+소스는 `Unity_Portfolio/`에서 관리하고 `_site/Unity_Portfolio/`로 복사해 배포합니다. 기존 공개 경로는 유지하며 원본 문서와 제작용 파일은 배포 대상에서 제외합니다.
 
 ## 구조
 

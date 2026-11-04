@@ -22,23 +22,24 @@ Unity_Portfolio/
   docs/                    # 원본 자료, 내용 근거와 작업 지침
   DESIGN.md                # Unity 버전 구성 기준
   README.md                # Unity 버전 실행 안내
-web-starter/index.html     # 이전 웹 주소에서 새 위치로 이동
-portfolio-ppt/index.html   # 이전 슬라이드 주소에서 새 위치로 이동
-.github/workflows/         # 저장소 전체 GitHub Pages 배포
+scripts/build-site.py      # 소스를 공개 경로에 맞춰 _site/로 복사
+tests/test_site_build.py   # 공개 경로, 파일과 앵커 검증
+_site/                    # 배포 파일과 로컬 미리보기, Git 제외
+.github/workflows/         # _site/만 GitHub Pages 배포
 ```
 
 ## 실행
 
-저장소 루트에서 실행합니다.
+저장소 루트에서 배포 파일을 준비한 뒤 실행합니다. 소스를 수정하면 준비 명령을 다시 실행합니다.
 
 ```sh
-python3 -m http.server 4173
+python3 scripts/build-site.py
+python3 -m http.server 4173 --directory _site
 ```
 
 - 저장소 안내: http://localhost:4173/
-- 프론트엔드 버전: http://localhost:4173/Front_Portfolio/
-- 웹: http://localhost:4173/Front_Portfolio/web-starter/
-- 프론트엔드 슬라이드: http://localhost:4173/Front_Portfolio/portfolio-ppt/
+- 프론트엔드 웹: http://localhost:4173/web-starter/
+- 프론트엔드 슬라이드: http://localhost:4173/portfolio-ppt/
 - Unity 웹: http://localhost:4173/Unity_Portfolio/web-starter/
 - Unity 슬라이드: http://localhost:4173/Unity_Portfolio/portfolio-ppt/
 
@@ -51,16 +52,25 @@ node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
 
 실행 조건과 수정 기준은 [Unity 버전 안내](Unity_Portfolio/README.md), [프론트엔드 버전 안내](Front_Portfolio/README.md), 후속 작업 지침은 [Unity 시작 프롬프트](Unity_Portfolio/docs/CODEX_START_PROMPT.md)와 [프론트엔드 시작 프롬프트](Front_Portfolio/docs/CODEX_START_PROMPT.md)를 확인합니다. 저장소 루트의 안내와 배포 설정은 공통으로 관리하고, 버전별 HTML/CSS와 PDF는 해당 폴더에서 관리합니다.
 
-## 배포 주소와 호환 경로
+## 배포 주소와 소스 경로
 
 기본 공개 주소는 `https://cheng80.github.io/web_portfolio/`로 유지합니다. 메인은 프론트엔드 웹, 프론트엔드 슬라이드, Unity 웹, Unity 슬라이드로 직접 연결합니다.
 
-- 프론트엔드 웹: `Front_Portfolio/web-starter/`
-- 프론트엔드 슬라이드: `Front_Portfolio/portfolio-ppt/`
+- 프론트엔드 웹: `web-starter/`
+- 프론트엔드 슬라이드: `portfolio-ppt/`
 - Unity 웹: `Unity_Portfolio/web-starter/`
 - Unity 슬라이드: `Unity_Portfolio/portfolio-ppt/`
 
-기존 `web-starter/`와 `portfolio-ppt/` 주소는 프론트엔드 버전으로 이동하며 쿼리와 슬라이드 앵커를 유지합니다. 기존 공개 경로와 저장소 이름은 변경하지 않습니다. `main`에 반영하면 기존 GitHub Pages 워크플로가 저장소의 웹 HTML, 슬라이드, 이미지와 PDF를 함께 배포합니다.
+`Front_Portfolio/`는 소스 관리용 폴더입니다. 배포 준비 스크립트가 이 폴더의 웹과 슬라이드를 `_site/web-starter/`, `_site/portfolio-ppt/`로 복사하므로 기존 주소에서 본문이 바로 열립니다. 주소 이동용 HTML은 사용하지 않습니다. Unity 버전은 기존 `Unity_Portfolio/` 공개 경로를 유지합니다.
+
+`main`에 반영하면 GitHub Pages 워크플로가 배포 파일을 준비하고 검증한 뒤 `_site/`만 배포합니다. 웹과 슬라이드의 HTML/CSS, 이미지와 제출용 PDF가 포함되며 원본 문서와 제작용 파일은 소스 폴더에 보존합니다. `_site/`는 자동 생성물이므로 직접 수정하지 않습니다.
+
+배포 전 검증은 다음 명령으로 실행합니다.
+
+```sh
+python3 scripts/build-site.py
+python3 -m unittest discover -s tests -v
+```
 
 ## 이전 작업 기록
 

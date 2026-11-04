@@ -12,6 +12,7 @@
 - 슬라이드 순서를 바꾸면 번호와 목차, 빠른 이동 링크를 함께 갱신한다. 특정 페이지 번호를 프로젝트 스타일 선택자로 사용하지 않는다.
 - 웹은 데스크톱/모바일을 확인하고, 슬라이드는 16:9 고정 캔버스에서 잘림과 겹침을 확인한다.
 - PDF는 저장소 루트에서 `node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs`로 생성한다. 실행 조건은 README를 따른다.
+- 배포 미리보기는 저장소 루트에서 `python3 scripts/build-site.py`로 준비한 뒤 `python3 -m http.server 4173 --directory _site`로 확인한다. `python3 -m unittest discover -s tests -v`로 공개 경로와 파일을 검증한다. `_site/`를 직접 수정하지 않으며 Unity 공개 경로는 기존 `/Unity_Portfolio/`를 유지한다.
 - 변경한 파일, 실제 검증과 미검증 범위를 보고한다. 커밋과 푸시는 사용자 요청 범위에서 수행한다.
 
 ## AI 활용 개발 사례 유지 기준
