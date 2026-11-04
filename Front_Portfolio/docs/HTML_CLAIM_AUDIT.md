@@ -82,3 +82,27 @@ Unknown / remove
 ```
 
 `Unknown / remove` claims must not ship.
+
+
+## Stone Match 추가 근거 (2026-11-04)
+
+사용자가 지정한 `jewelmatch` 프로젝트를 Rummi Poker 다음에 추가했다. 외부 표시명은 프로젝트 지침에 따라 `Stone Match`로 사용한다.
+
+- 소스: `https://github.com/cheng80/jewelmatch`, 로컬 확인 기준 커밋 `5a502bb`.
+- 로컬 원본: `/Users/cheng80/Desktop/Anther_Works/Flutter_Project/FlutterFrame_work/jewelmatch`.
+- 게임 정의: `docs/01_PRODUCT_SPEC.md`, `lib/game/jewel_game_mode.dart`, `lib/game/match_board_logic.dart`에서 8×8 매치 3, 무한/레벨/타임 모드, 콤보와 특수 보석을 확인했다.
+- 백엔드: `lib/services/backend/backend_selector.dart`와 `docs/progress/HANDOFF_2026-10-28_INTOSS.md`에서 PocketBase 랭킹 연동을 확인했다.
+- 앱인토스: 위 인계 문서와 광고 서비스의 구현 근거로 `광고 연동 구현`으로 표시한다. 스토어 출시나 토스 정식 출시를 의미하지 않는다.
+- 웹 주소: `docs/04_DEVELOPMENT_WORKFLOW.md`에 기록된 `https://cheng80.myqnapcloud.com/match/`를 사용한다.
+- 타이틀 스크린샷: 사용자가 지정한 `docs/assets/release/intoss/screenshot_portrait_01_title_636x1048.png`를 사용한다. 두 번째 사진은 아래의 새 레벨 모드 촬영본으로 교체했다. 두 사진 모두 636×1048 비율과 동일한 프레임으로 표시한다.
+- 출시 상태, 사용자 수, 성과 수치, 성능 개선 수치와 수상 이력은 추가하지 않는다.
+
+
+### 레벨 / 타임 모드 이펙트 촬영 (2026-11-04)
+
+- 사용자 요청에 따라 Ego Lite 백그라운드 촬영으로 만들었다. 타이머와 애니메이션 시점을 고정한 디버그 픽스처를 사용했다.
+- 원본 게임 `lib/`를 `tmp/portfolio-capture-20261104/fixture-lib/`로 복사하고 촬영 전용 훅만 추가해 로컬 빌드했다. 원본 게임 코드는 수정하지 않았다.
+- 하이퍼 큐브와 토르 망치를 장착하고, 원래 `useTestItem` / `handleBoardTap` 경로로 아이템을 사용했다. 실제 게임의 렌더링을 캡처했으며 이미지를 합성하지 않았다.
+- 레벨 화면: 사용자가 선택한 토르 망치의 십자번개 장면이다. `assets/reference/stone-match/stone-match-level-thor-hammer.png`에 보존하고 웹과 슬라이드의 `stone-match-gameplay.png`로 복사했다.
+- 타임 화면: 하이퍼 큐브의 에너지와 보석 파편 장면을 `assets/reference/stone-match/stone-match-time-hyper-cube.png`에 보존했다. 현재 포트폴리오의 두 번째 사진은 레벨 화면을 사용한다.
+- 두 촬영본은 636×1048 PNG다. 고정 시드, 레벨, 시간, 아이템 재고를 사용한 연출용 자료이며 실제 사용자 플레이 기록이나 성능 측정 근거로 사용하지 않는다.

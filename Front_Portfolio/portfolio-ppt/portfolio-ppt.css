@@ -1124,7 +1124,7 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   }
 }
 
-/* Slide 14: keep the six Chunjae cards inside the fixed 16:9 canvas. */
+/* Slide 15: keep the six Chunjae cards inside the fixed 16:9 canvas. */
 .chunjae-slide {
   align-content: start !important;
 }
@@ -1275,38 +1275,44 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   max-height: 570px !important;
 }
 
-#slide-12 {
+.stone-match-slide .game-phones img {
+  height: auto;
+  aspect-ratio: 636 / 1048;
+  object-fit: contain;
+}
+
+#slide-13 {
   grid-template-columns: minmax(0, 320px) minmax(0, 1fr) !important;
   gap: 30px !important;
   align-items: start !important;
 }
 
-#slide-12 .project-copy {
+#slide-13 .project-copy {
   max-width: 320px !important;
 }
 
-#slide-12 .project-copy h2 {
+#slide-13 .project-copy h2 {
   font-size: 68px !important;
   line-height: 1.02 !important;
 }
 
-#slide-12 .project-copy p {
+#slide-13 .project-copy p {
   font-size: 19px !important;
   line-height: 1.38 !important;
 }
 
-#slide-12 .bullet-grid {
+#slide-13 .bullet-grid {
   margin: 18px 0 !important;
 }
 
-#slide-12 .wide-board {
+#slide-13 .wide-board {
   align-self: start !important;
   width: 100% !important;
   margin-top: 40px !important;
   overflow: hidden !important;
 }
 
-#slide-12 .wide-board img {
+#slide-13 .wide-board img {
   width: 100% !important;
   height: auto !important;
   max-height: 520px !important;

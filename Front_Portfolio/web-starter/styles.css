@@ -682,6 +682,12 @@ h3 {
   box-shadow: 0 16px 36px rgba(13, 29, 58, 0.16);
 }
 
+.stone-match-feature .game-shot-pair img {
+  height: auto;
+  aspect-ratio: 636 / 1048;
+  object-fit: contain;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

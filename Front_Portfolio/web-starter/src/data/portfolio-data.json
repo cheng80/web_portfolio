@@ -3,7 +3,7 @@
     "name_ko": "김택권",
     "name_en": "KIM TAEK KWON",
     "title": "사용자 경험을 설계하고, 기술로 문제를 해결하는 개발자",
-    "summary": "14년 이상의 모바일·게임·앱 개발 경험을 기반으로 Flutter, Unity, FastAPI, AI/RAG, IoT 연동 프로젝트를 수행해왔습니다.",
+    "summary": "13년 4개월의 모바일·게임·앱 개발 경험을 기반으로 Flutter, Unity, FastAPI, AI/RAG, IoT 연동 프로젝트를 수행해왔습니다.",
     "contact_source_note": "원본 PDF 기준. 이전 생성물에 섞인 010-7607-3131 / tk0311@naver.com 값은 사용하지 말 것.",
     "phone": "010-2626-2131",
     "email": "cheng80@naver.com",
@@ -281,6 +281,35 @@
         "FCM"
       ],
       "status": "출시 준비 중 / GitHub 공개"
+    },
+    {
+      "id": "stone_match",
+      "name": "Stone Match",
+      "tagline": "Flutter/Flame 기반 8×8 매치 3 퍼즐 게임",
+      "type": "Game",
+      "repo": "https://github.com/cheng80/jewelmatch",
+      "demo": "https://cheng80.myqnapcloud.com/match/",
+      "overview": "무한, 레벨, 타임 모드와 콤보, 특수 보석을 구현하고 PocketBase 랭킹을 연동한 퍼즐 게임입니다.",
+      "scope": [
+        "Flutter/Flame 게임 구현",
+        "8×8 매치 3 보드와 특수 보석",
+        "무한, 레벨, 타임 모드",
+        "PocketBase 랭킹 연동",
+        "Apps in Toss 광고 연동"
+      ],
+      "features": [
+        "3가지 게임 모드",
+        "콤보와 특수 보석 효과",
+        "레벨과 타임 랭킹",
+        "웹 데모"
+      ],
+      "tech": [
+        "Flutter",
+        "Flame",
+        "PocketBase",
+        "Apps in Toss"
+      ],
+      "status": "웹 데모 / Apps in Toss 연동 구현"
     },
     {
       "id": "taborder",

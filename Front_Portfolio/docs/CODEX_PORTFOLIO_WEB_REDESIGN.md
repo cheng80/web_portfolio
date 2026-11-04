@@ -91,20 +91,14 @@ simple-icons 또는 직접 저장한 SVG 브랜드 아이콘
 
 ## 3. 원본 자료와 리소스 경로
 
-아래 경로는 현재 ChatGPT 작업 환경 기준이다. Codex 프로젝트로 옮길 때는 `docs/source/`, `assets/`, `public/` 아래로 복사해서 사용한다.
+원본 PDF 경로는 프로젝트 루트 기준이다. 이전 생성물의 `/mnt/data/...` 경로는 과거 ChatGPT 작업 환경의 기록이며, 현재 로컬 파일 경로가 아니다.
 
 ### 3.1 원본 PDF
 
-현재 업로드된 원본 포트폴리오 PDF:
+현재 프로젝트에 저장된 원본 포트폴리오 PDF:
 
 ```txt
-/mnt/data/김택권 포트폴리오(1).pdf
-```
-
-Codex 프로젝트 내 권장 복사 위치:
-
-```txt
-docs/source/current_portfolio.pdf
+docs/김택권 포트폴리오.pdf
 ```
 
 원본 PDF 기준 주요 내용:
@@ -243,7 +237,7 @@ KIM TAEK KWON
 
 사용자 경험을 설계하고, 기술로 문제를 해결하는 개발자
 
-14년 이상의 모바일·게임·앱 개발 경험을 기반으로 Flutter, Unity, FastAPI, AI/RAG, IoT 연동 프로젝트를 수행해왔습니다.
+13년 4개월의 모바일·게임·앱 개발 경험을 기반으로 Flutter, Unity, FastAPI, AI/RAG, IoT 연동 프로젝트를 수행해왔습니다.
 앱 기획부터 구현, 출시, 운영까지 전체 흐름을 경험했습니다.
 ```
 
@@ -310,7 +304,7 @@ export const career = [
 추가 표시:
 
 ```txt
-총 모바일 개발 경력 14년 이상
+총 개발 경력 13년 4개월 (최신 이력서 2026-05-30 기준)
 현재 Flutter 기반 개인 앱 및 AI/RAG 프로젝트 확장 중
 ```
 
@@ -817,8 +811,7 @@ ChromaDB
 ```txt
 portfolio-web/
 ├── docs/
-│   ├── source/
-│   │   └── current_portfolio.pdf
+│   ├── 김택권 포트폴리오.pdf
 │   ├── planning/
 │   │   └── CODEX_PORTFOLIO_WEB_REDESIGN.md
 │   └── notes/

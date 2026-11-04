@@ -1,44 +1,47 @@
-# 김택권 포트폴리오 웹 리디자인 Codex 전달 패키지
+# 김택권 포트폴리오
 
-이 ZIP은 Codex 프로젝트로 옮겨서 실제 웹 포트폴리오를 제작하기 위한 전달 패키지입니다.
+기존 산출물을 `Front_Portfolio/`에 모아 **프론트엔드 버전**으로 보존합니다. 유니티 전반의 개발 경험을 우선하는 별도 버전은 이 정리 이후에 구성합니다.
 
-## 사용 순서
-
-1. ZIP 압축을 풉니다.
-2. `docs/CODEX_START_PROMPT.md` 내용을 Codex에 붙여넣습니다.
-3. `docs/CODEX_PORTFOLIO_WEB_REDESIGN.md`를 전체 작업 지시서로 전달합니다.
-4. `assets/source/current_portfolio.pdf`를 원본 자료로 참조하게 합니다.
-5. `web-starter/src/data/portfolio-data.json`을 기반으로 `src/data/*.ts`를 구성합니다.
-6. `web-starter/index.html`은 레이아웃 참고용으로 사용합니다.
-
-## 핵심 원칙
-
-- 완성 페이지를 이미지로 만들지 않습니다.
-- 모든 텍스트는 수정 가능한 React/HTML 텍스트로 유지합니다.
-- 아이콘은 SVG 컴포넌트 또는 SVG 파일로 관리합니다.
-- 앱 스크린샷, QR, 로고만 이미지로 사용합니다.
-
-## 포함 파일
+## 현재 구조
 
 ```txt
-docs/
-  CODEX_PORTFOLIO_WEB_REDESIGN.md
-  CODEX_START_PROMPT.md
-  RESOURCE_MANIFEST.md
-assets/
-  source/current_portfolio.pdf
-  reference/*.png
-web-starter/
-  index.html
-  src/data/portfolio-data.json
+index.html                 # 프론트엔드 웹과 슬라이드로 이동하는 저장소 안내
+Front_Portfolio/
+  index.html               # 프론트엔드 버전 안내
+  web-starter/             # 웹 HTML/CSS, 스크린샷, 참고 JSON
+  portfolio-ppt/           # 18장 슬라이드, PDF, 생성 스크립트
+  assets/reference/        # 디자인 참고 자료와 Stone Match 촬영본
+  docs/                    # 원본 PDF, 제작 지침, 검증 기록
+  DESIGN.md                # 프론트엔드 버전 디자인 기준
+  README.md                # 폴더별 수정과 실행 안내
+  tmp/                     # 기존 PDF 추출 자료
+  _archive/conversations/  # 이전 문구 윤문 작업 기록, Git 제외
+web-starter/index.html     # 이전 웹 주소에서 새 위치로 이동
+portfolio-ppt/index.html   # 이전 슬라이드 주소에서 새 위치로 이동
+.github/workflows/         # 저장소 전체 GitHub Pages 배포
 ```
 
-## 연락처 검증
+## 실행
 
-원본 PDF 기준 연락처는 다음과 같습니다.
+저장소 루트에서 실행합니다.
 
-- 전화번호: 010-2626-2131
-- 이메일: cheng80@naver.com
-- GitHub: https://github.com/cheng80
+```sh
+python3 -m http.server 4173
+```
 
-최종 공개 전 사용자가 한 번 더 확인해야 합니다.
+- 저장소 안내: http://localhost:4173/
+- 프론트엔드 버전: http://localhost:4173/Front_Portfolio/
+- 웹: http://localhost:4173/Front_Portfolio/web-starter/
+- 슬라이드: http://localhost:4173/Front_Portfolio/portfolio-ppt/
+
+PDF 갱신은 저장소 루트에서 다음 명령을 사용합니다.
+
+```sh
+node Front_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
+```
+
+실행 조건과 수정 기준은 [프론트엔드 버전 안내](Front_Portfolio/README.md), 후속 작업 지침은 [시작 프롬프트](Front_Portfolio/docs/CODEX_START_PROMPT.md)를 확인합니다. 저장소 루트의 안내와 배포 설정은 공통으로 관리하고, 버전별 HTML/CSS와 PDF는 해당 폴더에서 관리합니다.
+
+## 이전 작업 기록
+
+기존 `_workspace/`의 2026-07-16 윤문 작업 2건은 `Front_Portfolio/_archive/conversations/`에 원문 그대로 옮겼습니다. 실행 시 참조하지 않는 로컬 기록이며 `.gitignore`로 제외합니다. 삭제하지 않았습니다.
