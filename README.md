@@ -70,3 +70,5 @@ node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
 ## 두 버전의 공통 내용
 
 프론트엔드와 Unity 버전은 소개와 강조 순서가 다릅니다. 공통 프로젝트 본문, 출시 상태, 링크, 이미지와 AI 활용 사례 4개는 같은 최신 내용으로 유지합니다. 우주좀비 상세 사례도 양쪽에 포함하며 두 슬라이드는 각각 23장입니다.
+
+최근 게임과 AI 사례의 순서는 Rummi Poker → Stone Match → AI 활용 4개 사례 → 순서대로 탭탭이며 웹과 슬라이드에 동일하게 적용합니다.
