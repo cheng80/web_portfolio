@@ -40,6 +40,15 @@
 - `assets/reference/reference_bad_all_pages_image.png`  
   전체 페이지를 이미지 한 장으로 생성했던 실패 사례입니다. 최종 사용 금지입니다.
 
+## 확정 AI 활용 시안
+
+`assets/reference/ai-workflow/`에 사용자가 확정한 시안 4장을 보존합니다. 순서는 종합 소개, 자동 플레이 검증, 밸런스 분석 도구, 카드 아트입니다. 실제 웹과 슬라이드의 편집 원본은 각 HTML/CSS와 `assets/ai-workflow/`이며, 참고 이미지를 실행 시 불러오지 않습니다.
+
+- `01-ai-workflow.png`
+- `02-automatic-play-tools.png`
+- `03-balance-tools.png`
+- `04-card-art-pipeline.png`
+
 ## 아이콘 정책
 
 - 일반 UI 아이콘: `lucide-react` 우선

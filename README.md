@@ -10,12 +10,11 @@ Front_Portfolio/
   index.html               # 프론트엔드 버전 안내
   web-starter/             # 웹 HTML/CSS, 스크린샷, 참고 JSON
   portfolio-ppt/           # 23장 슬라이드, PDF, 생성 스크립트
-  assets/reference/        # 디자인 참고 자료와 Stone Match 촬영본
+  assets/reference/        # 디자인 참고 자료, 확정 AI 시안과 Stone Match 촬영본
   docs/                    # 원본 PDF, 제작 지침, 검증 기록
   DESIGN.md                # 프론트엔드 버전 디자인 기준
   README.md                # 폴더별 수정과 실행 안내
-  tmp/                     # 기존 PDF 추출 자료
-  _archive/conversations/  # 이전 문구 윤문 작업 기록, Git 제외
+  _archive/                # 이전 대화, 문구 검토와 실행 근거, Git 제외
 Unity_Portfolio/
   index.html               # Unity 버전 안내
   web-starter/             # Unity 우선 웹과 전용 이미지
@@ -65,7 +64,9 @@ node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
 
 ## 이전 작업 기록
 
-기존 `_workspace/`의 2026-07-16 윤문 작업 2건은 `Front_Portfolio/_archive/conversations/`에 원문 그대로 옮겼습니다. 실행 시 참조하지 않는 로컬 기록이며 `.gitignore`로 제외합니다. 삭제하지 않았습니다.
+이전 윤문 대화는 `Front_Portfolio/_archive/conversations/`, 문구 검토 결과는 `Front_Portfolio/_archive/reviews/`, 밸런스 도구의 실제 실행 근거는 `Front_Portfolio/_archive/evidence/`에 보존합니다. 실행 시 참조하지 않는 로컬 기록이며 `.gitignore`로 제외합니다. 확정 AI 시안 4장은 `Front_Portfolio/assets/reference/ai-workflow/`에서 관리합니다.
+
+작업용 `_workspace/`, 브라우저 검증 캡처와 로그, PDF 추출 임시본과 사용하지 않는 중간 이미지는 정리했습니다. 원본 PDF, 최종 웹과 슬라이드, 제출용 PDF와 생성 스크립트는 유지합니다.
 
 ## 두 버전의 공통 내용
 

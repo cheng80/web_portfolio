@@ -30,10 +30,10 @@ portfolio-ppt/
   assets/                          # 슬라이드용 스크린샷과 아이콘
   scripts/render-image-pdf.mjs      # 슬라이드 이미지 기반 PDF 생성
   output/                          # 생성된 16:9 PDF
-assets/reference/                  # 이전 시안과 참고 이미지
+assets/reference/                  # 디자인 참고 자료, 확정 AI 시안과 촬영본
 docs/                              # 원본 PDF, 제작 지침, 검증 기록
 DESIGN.md                          # 디자인 및 콘텐츠 작성 기준
-_archive/conversations/            # 이전 문구 윤문 기록, Git 제외
+_archive/                          # 이전 대화, 문구 검토와 실행 근거, Git 제외
 ```
 
 ## 수정 방법과 자료 기준
@@ -73,6 +73,8 @@ node portfolio-ppt/scripts/render-image-pdf.mjs
 ## 이전 대화 기록
 
 `_archive/conversations/2026-07-16-001/`은 슬라이드, `2026-07-16-002/`는 웹 문구 윤문 기록입니다. 입력 원문, 수정본, 검토 JSON을 보존하며 현재 실행 파일로 사용하지 않습니다. 이 폴더는 Git에서 제외합니다. 현재 내용의 기준은 각 포트폴리오의 HTML과 원본 자료입니다.
+
+2026-11-04 문구 검토 결과는 `_archive/reviews/`, 밸런스 도구의 실제 실행 근거는 `_archive/evidence/`에 보존합니다. 확정 AI 시안 4장은 `assets/reference/ai-workflow/`에 보관하며, 작업용 미리보기와 로그, PDF 추출 임시본은 유지하지 않습니다.
 
 ## AI 활용 개발 사례
 
