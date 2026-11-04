@@ -1852,7 +1852,6 @@ main {
   }
 }
 
-/* Keep the infographic's layout height when reducing its visual size. */
 #ai-rag .ai-infographic {
   width: 100% !important;
   max-width: none !important;
@@ -1867,8 +1866,8 @@ main {
 
 @media (min-width: 901px) {
   #ai-rag .ai-infographic {
-    transform: scale(0.75);
-    transform-origin: top center;
+    width: 75% !important;
+    margin-inline: auto;
   }
 }
 
