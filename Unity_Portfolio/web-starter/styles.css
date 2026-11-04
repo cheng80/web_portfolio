@@ -1852,7 +1852,6 @@ main {
   }
 }
 
-/* Keep chatbot infographic full-width for readability */
 #ai-rag .ai-infographic {
   width: 100% !important;
   max-width: none !important;
@@ -1863,6 +1862,13 @@ main {
 #ai-rag .ai-infographic img {
   width: 100% !important;
   max-height: none !important;
+}
+
+@media (min-width: 901px) {
+  #ai-rag .ai-infographic {
+    width: 75% !important;
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 1101px) {
