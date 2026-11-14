@@ -435,7 +435,6 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
 }
 
 .grovy-slide .title-row p {
-  max-width: 980px;
   margin: 0;
 }
 

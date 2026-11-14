@@ -1882,6 +1882,10 @@ main {
   }
 }
 
+#company-work .work-grid + .section-head {
+  margin-top: 34px;
+}
+
 #company-work .work-grid h3,
 #company-work .work-grid.compact h3 {
   font-size: 20px;
