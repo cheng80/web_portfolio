@@ -107,6 +107,16 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 
 1. 프로젝트 상위 폴더: 검증된 `output/`의 PDF로 동명 사본을 교체하고 SHA-256으로 일치 여부를 확인한다.
 2. Google Drive: `git config --local --get portfolio.pdfDriveFolder`로 지정 폴더를 확인한다. 폴더 안의 동명 제출용 PDF를 찾고 기존 파일의 새 버전으로 업로드해 링크를 유지한다. 갱신한 파일을 다시 확인하고 대상이나 권한을 확인할 수 없으면 보고한다. 폴더 주소는 공개 저장소에 커밋하지 않는다.
+3. GitHub Pages 배포 후 공개 PDF와 Google Drive 사본의 실제 파일을 읽어 `output/` 및 상위 폴더 사본과 SHA-256을 대조한다. 일치 여부를 배포 커밋과 함께 기록한다.
+
+### 공개 PDF와 사본 대조 기록
+
+2026-11-15, 커밋 `15b5bc1`의 [GitHub Pages 배포](https://github.com/cheng80/web_portfolio/actions/runs/43667238071) 후 프론트엔드와 Unity PDF의 실제 파일을 대조했다. 각 버전에서 프로젝트 `output/`, 프로젝트 상위 폴더, Google Drive, 공개 사이트의 SHA-256이 모두 일치했다.
+
+| 버전 | 파일 크기(바이트) | SHA-256 |
+| --- | ---: | --- |
+| 프론트엔드 | 5,993,064 | `172519fae7d05a6781f20fe151e87576019603361a1cf79ecd452601978ffb5a` |
+| Unity | 6,012,064 | `8178d68547238c2b3207c546b561a60e2a08a2d0e0e314d4abd04aefea637a66` |
 
 ## 배포와 기존 주소
 

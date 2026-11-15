@@ -71,7 +71,7 @@ node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
 
 제출용 PDF는 각 `portfolio-ppt/output/`에 있으며, 슬라이드 23장을 이미지로 렌더링한 파일입니다. 사이트 빌드와 배포는 이 파일을 복사합니다. 슬라이드를 수정한 경우 위 명령으로 해당 PDF를 먼저 갱신합니다.
 
-검증한 최종 PDF는 프로젝트 상위 폴더와 지정된 Google Drive 폴더의 사본도 갱신합니다. 절차는 [핸드오프의 PDF 갱신 안내](HANDOFF.md#pdf-갱신)를 따릅니다.
+검증한 최종 PDF는 프로젝트 상위 폴더와 지정된 Google Drive 폴더의 사본도 갱신합니다. 배포 후에는 공개 PDF와 사본의 SHA-256을 대조합니다. [PDF 갱신 절차](HANDOFF.md#pdf-갱신)와 [공개 PDF와 사본 대조 기록](HANDOFF.md#공개-pdf와-사본-대조-기록)을 참고하세요.
 
 ## 배포 주소와 소스 경로
 
