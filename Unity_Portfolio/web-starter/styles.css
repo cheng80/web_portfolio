@@ -1900,6 +1900,8 @@ main {
 .unity-proof-list { padding-left: 20px; line-height: 1.9; }
 .unity-skill-grid .eyebrow { font-size: 12px; }
 .unity-skill-grid article { min-height: 260px; }
-.keep-phrase { white-space: nowrap; }
 .hero-lead, .section-head p, .unity-game-feature p, .unity-skill-grid p, .unity-skill-grid span { word-break: keep-all; overflow-wrap: anywhere; }
 @media (max-width: 900px) { .unity-game-feature { grid-template-columns: 1fr; gap: 24px; } }
+
+.keep-phrase { white-space: nowrap; }
+.skill-grid span.keep-phrase { font: inherit; color: inherit; }

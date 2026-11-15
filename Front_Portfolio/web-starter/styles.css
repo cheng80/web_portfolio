@@ -1911,3 +1911,6 @@ main {
 .unity-game-shot figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; text-align: center; }
 .unity-proof-list { padding-left: 20px; line-height: 1.9; }
 @media (max-width: 900px) { .unity-game-feature { grid-template-columns: 1fr; gap: 24px; } }
+
+.keep-phrase { white-space: nowrap; }
+.skill-grid span.keep-phrase { font: inherit; color: inherit; }

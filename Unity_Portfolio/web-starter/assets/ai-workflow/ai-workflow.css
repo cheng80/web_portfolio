@@ -66,6 +66,10 @@
 .slide.ai-case .ai-demo-image { height:275px; }
 .slide.ai-case .ai-art-gallery { height:334px; }
 .slide.ai-case .ai-foot { position:absolute; left:48px; right:160px; bottom:18px; margin:0; padding:0; border:0; }
+@media (1000px < width <= 1200px) {
+  .ai-workflow-section .ai-work-card:has(.ai-bot-examples) { grid-template-rows:minmax(118px,auto) auto 1fr; }
+  .ai-workflow-section .ai-bot-example { grid-template-columns:1fr; }
+}
 @media (max-width:1000px) {
   .ai-workflow-section .ai-work-grid,.ai-workflow-section .ai-detail-grid,.ai-workflow-section .ai-capabilities { grid-template-columns:1fr; }
   .ai-workflow-section .ai-work-card { grid-template-rows:auto auto auto; }
