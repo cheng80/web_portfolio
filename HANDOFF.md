@@ -112,6 +112,7 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 ### 공개 PDF와 사본 대조 기록
 
 2026-11-15, 커밋 `15b5bc1`의 [GitHub Pages 배포](https://github.com/cheng80/web_portfolio/actions/runs/43667238071) 후 프론트엔드와 Unity PDF의 실제 파일을 대조했다. 각 버전에서 프로젝트 `output/`, 프로젝트 상위 폴더, Google Drive, 공개 사이트의 SHA-256이 모두 일치했다.
+문서 커밋 `9295f3c`의 [자동 배포](https://github.com/cheng80/web_portfolio/actions/runs/43668642418) 후에도 두 공개 PDF의 SHA-256이 프로젝트 상위 폴더 및 Google Drive 사본과 각각 일치함을 재확인했다.
 
 | 버전 | 파일 크기(바이트) | SHA-256 |
 | --- | ---: | --- |
