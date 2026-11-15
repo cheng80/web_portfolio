@@ -122,7 +122,7 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 
 기술 스택 추가 후에는 Ego에서 웹 1440px 및 390px 화면과 두 16:9 슬라이드를 확인했다. 최신 PDF로 배포 파일을 다시 준비했고 테스트 4개가 통과했다.
 
-프론트엔드 슬라이드 3장의 `Team / Ops` 카드는 협업과 운영 도구를 나누고 `Cloudflare Pages`를 한 줄로 표시한다. 로컬 슬라이드와 PDF에서 확인했고, 프론트엔드 PDF의 상위 폴더 및 Google Drive 사본을 교체했다.
+프론트엔드 슬라이드 3장의 `Team / Ops` 카드는 협업과 운영 도구를 나누고 `Cloudflare Pages;`를 세미콜론까지 한 줄로 표시한다. 프론트엔드 PDF는 다시 생성할 때 상위 폴더 및 Google Drive 사본도 교체한다.
 
 `5064bbd` 기준의 이전 전체 점검에서 다음을 확인했다. 새 수정 후에는 영향 범위를 다시 검증한다.
 
