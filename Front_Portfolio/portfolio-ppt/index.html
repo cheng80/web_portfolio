@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>김택권 16:9 포트폴리오 슬라이드</title>
   <meta name="description" content="김택권 개발 포트폴리오 16:9 PPT 스타일 웹페이지">
-  <link rel="stylesheet" href="./portfolio-ppt.css?v=20261115">
+  <link rel="stylesheet" href="./portfolio-ppt.css?v=20261115-2">
   <link rel="stylesheet" href="./assets/ai-workflow/ai-workflow.css?v=20261104-2">
 </head>
 <body>
@@ -69,13 +69,13 @@
       </div>
       <div class="stack-grid">
         <article><img src="./assets/icons/mobile-stack-rendered.png" alt=""><h3>Mobile</h3><p>Flutter, Flame, Android, iOS, Unity</p></article>
-        <article><img src="./assets/icons/backend-stack-rendered.png" alt=""><h3>Backend</h3><p>FastAPI, REST API, WebSocket, FCM</p></article>
+        <article><img src="./assets/icons/backend-stack-rendered.png" alt=""><h3>Backend</h3><p>FastAPI, REST API,<br>WebSocket, Firebase(FCM)</p></article>
         <article><div class="mini-icons"><img src="./assets/icons/ai-chip-user.png" alt=""><img src="./assets/icons/rag-docs-user.png" alt=""><img src="./assets/icons/ollama.svg" alt=""></div><h3>AI / Data</h3><p>RAG, ChromaDB, Ollama, ML, 데이터 분석</p></article>
         <article><img src="./assets/icons/iot-stack-rendered.png" alt=""><h3>Hardware</h3><p>Arduino, ESP32, Raspberry Pi, MQTT, Serial</p></article>
         <article><h3>State / Pattern</h3><p>Riverpod, Provider, MVVM, 앱 구조 설계</p></article>
-        <article><h3>Database</h3><p>Hive, SQLite, MySQL, Firebase</p></article>
-        <article><h3>Language</h3><p>Dart, C#, Python, Lua, Swift</p></article>
-        <article><h3>Collaboration</h3><p>Git, Slack, 개발 프로세스 구축</p></article>
+        <article><h3>Database</h3><p>SQL, MySQL, SQLite, Hive,<br>Supabase(PostgreSQL)</p></article>
+        <article><h3>Language</h3><p>Dart, JavaScript, C#, Python, Lua, Swift</p></article>
+        <article><h3>Ops / Team</h3><p>GA4, Sentry, <span class="keep-phrase">Cloudflare Pages</span><br>Git, Slack, 개발 프로세스 구축</p></article>
       </div>
       <div class="slide-no">03 / 23</div>
     </section>
@@ -204,6 +204,7 @@
           <h2>Stone Match</h2>
           <p>8×8 보드에서 같은 보석을 맞추는<br>매치 3 퍼즐 게임입니다.<br>세 가지 모드와 콤보, 특수 보석을 구현했습니다.</p>
           <ul class="bullet-grid"><li>무한, 레벨, 타임 3모드</li><li>콤보와 특수 보석 효과</li><li>PocketBase 랭킹 연동</li><li>Apps in Toss 광고 연동 구현</li></ul>
+          <p class="ops-summary">GA4 사용 지표와 Sentry 오류 및 릴리스 정보를 확인하는 운영 대시보드를 JavaScript로 개발해 Cloudflare Pages에 배포했습니다. 초기 버전에서는 Supabase(PostgreSQL)로 익명 로그인과 랭킹 저장을 연동했습니다.</p>
           <div class="link-row"><a href="https://github.com/cheng80/jewelmatch">GitHub</a><a href="https://cheng80.myqnapcloud.com/match/">Web Demo</a></div>
         </div>
         <figure class="game-phones"><img src="./assets/projects/stone-match/stone-match-title.png" width="636" height="1048" alt="Stone Match 타이틀 화면"><img src="./assets/projects/stone-match/stone-match-gameplay.png" width="636" height="1048" alt="Stone Match 레벨 모드, 토르 망치의 십자번개 효과"></figure>

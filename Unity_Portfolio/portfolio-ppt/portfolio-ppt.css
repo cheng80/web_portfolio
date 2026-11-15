@@ -1275,6 +1275,17 @@ p { color: #38455a; font-size: clamp(17px, 1.55vw, 23px); font-weight: 720; line
   max-height: 570px !important;
 }
 
+.stone-match-slide .bullet-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: none;
+  margin-block: 18px;
+}
+
+.stone-match-slide .project-copy .ops-summary {
+  font-size: 19px !important;
+  line-height: 1.38 !important;
+}
+
 .stone-match-slide .game-phones img {
   height: auto;
   aspect-ratio: 636 / 1048;
