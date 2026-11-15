@@ -9,6 +9,7 @@
 | 먼저 확인할 것 | 문서 |
 | --- | --- |
 | 현재 상태와 다음 작업의 주의점 | [HANDOFF.md](HANDOFF.md) |
+| 잡코리아와 사람인 작업 기록 | [채용 사이트 이력서 갱신](HANDOFF.md#채용-사이트-이력서-갱신) |
 | 공통 작업 규칙 | [AGENTS.md](AGENTS.md) |
 | 프론트엔드 수정 지침 | [시작 프롬프트](Front_Portfolio/docs/CODEX_START_PROMPT.md) |
 | Unity 수정 지침 | [시작 프롬프트](Unity_Portfolio/docs/CODEX_START_PROMPT.md) |
@@ -69,6 +70,8 @@ node Unity_Portfolio/portfolio-ppt/scripts/render-image-pdf.mjs
 실행 조건과 수정 기준은 [Unity 버전 안내](Unity_Portfolio/README.md), [프론트엔드 버전 안내](Front_Portfolio/README.md), 후속 작업 지침은 [Unity 시작 프롬프트](Unity_Portfolio/docs/CODEX_START_PROMPT.md)와 [프론트엔드 시작 프롬프트](Front_Portfolio/docs/CODEX_START_PROMPT.md)를 확인합니다. 저장소 루트의 안내와 배포 설정은 공통으로 관리하고, 버전별 HTML/CSS와 PDF는 해당 폴더에서 관리합니다.
 
 제출용 PDF는 각 `portfolio-ppt/output/`에 있으며, 슬라이드 23장을 이미지로 렌더링한 파일입니다. 사이트 빌드와 배포는 이 파일을 복사합니다. 슬라이드를 수정한 경우 위 명령으로 해당 PDF를 먼저 갱신합니다.
+
+검증한 최종 PDF는 프로젝트 상위 폴더와 지정된 Google Drive 폴더의 사본도 갱신합니다. 절차는 [핸드오프의 PDF 갱신 안내](HANDOFF.md#pdf-갱신)를 따릅니다.
 
 ## 배포 주소와 소스 경로
 

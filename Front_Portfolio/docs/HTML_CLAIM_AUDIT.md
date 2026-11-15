@@ -106,3 +106,10 @@ Unknown / remove
 - 레벨 화면: 사용자가 선택한 토르 망치의 십자번개 장면이다. `assets/reference/stone-match/stone-match-level-thor-hammer.png`에 보존하고 웹과 슬라이드의 `stone-match-gameplay.png`로 복사했다.
 - 타임 화면: 하이퍼 큐브의 에너지와 보석 파편 장면을 `assets/reference/stone-match/stone-match-time-hyper-cube.png`에 보존했다. 현재 포트폴리오의 두 번째 사진은 레벨 화면을 사용한다.
 - 두 촬영본은 636×1048 PNG다. 고정 시드, 레벨, 시간, 아이템 재고를 사용한 연출용 자료이며 실제 사용자 플레이 기록이나 성능 측정 근거로 사용하지 않는다.
+
+## Stone Match 운영 대시보드 근거 (2026-11-15)
+
+- 초기 백엔드에서 Supabase와 PostgreSQL로 익명 로그인과 랭킹 저장을 연동했다. `jewelmatch`의 `docs/decisions/ADR-009-supabase-backend.md`가 근거다. 이후 PocketBase로 이전했으므로 Supabase를 현재 운영 백엔드로 표기하지 않는다.
+- 운영 대시보드는 별도 `stomematch_dashboard` 저장소에서 JavaScript로 개발해 Cloudflare Pages에 배포했다. GA4 사용 지표와 Sentry 오류 및 릴리스 정보를 한 화면에서 조회한다. 대시보드 `README.md`와 게임의 `docs/plans/PLAN-011-ga4-behavior-analytics.md`가 근거다.
+- 잡코리아와 사람인 경력기술서는 초기 Supabase 연동과 대시보드 경험을 구분해 기록한다. 기술 스택에서는 Supabase를 강조하고 PocketBase는 생략했다. 운영 지표 수치나 효과는 주장하지 않는다.
+- 이 사례는 현재 채용 사이트 이력서에만 반영돼 있다. 포트폴리오에 추가할 때 운영 화면은 로그인 없이 내용이 보이지 않으므로 예시 데이터 또는 수치를 가린 이미지를 검토한다.
