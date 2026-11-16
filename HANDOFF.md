@@ -1,6 +1,6 @@
 # 다음 작업자를 위한 핸드오프
 
-상태 확인일: **2026-11-15**. 경로와 명령은 모두 저장소 루트 기준이다.
+상태 확인일: **2026-11-16**. 경로와 명령은 모두 저장소 루트 기준이다.
 
 ## 지금 상태
 
@@ -124,6 +124,8 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 원격 저장소는 `cheng80/web_portfolio`, 배포 브랜치는 `main`이다. 공개 주소 4개와 소스의 매핑은 [README의 배포 안내](README.md#배포-주소와-소스-경로)를 따른다.
 
 워크플로는 `scripts/build-site.py` 실행 → 테스트 → `_site/` 업로드 → GitHub Pages 배포 순서다. 프론트엔드는 기존 `/web-starter/`, `/portfolio-ppt/`에서 본문이 바로 열려야 한다. `/Front_Portfolio/...`는 공개 주소가 아니다. 메인에는 프론트엔드 웹/슬라이드와 Unity 웹/슬라이드 4개를 직접 연결한다.
+
+[기존 배포 실행](https://github.com/cheng80/web_portfolio/actions/runs/43662160628)은 재시도 때 같은 이름의 배포 파일이 두 개 생겨 실패했다. 이제 업로드와 배포 단계 모두 `github-pages-${{ github.run_attempt }}`를 사용한다. 같은 실행을 재시도해도 `github-pages-1`, `github-pages-2`처럼 이름이 달라져 현재 시도의 파일만 배포한다.
 
 사용자가 커밋과 푸시를 요청하면 관련 파일만 stage하고 staged diff와 검증 결과를 확인한다. 한국어로 커밋하고 푸시한 뒤 Actions 성공과 실제 주소를 확인한다. 이전 대화의 게시 요청을 이후 모든 변경의 게시 승인으로 확대하지 않는다.
 
