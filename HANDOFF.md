@@ -63,10 +63,11 @@
 
 ## 채용 사이트 이력서 갱신
 
-2026-11-15에 잡코리아와 사람인의 이력서를 저장하고 작성완료했다. Ego의 이력서 보기 화면 두 곳에서 최종본을 확인했다. 이후 개인 프로젝트 기술과 Stone Match 운영 대시보드 경험을 포트폴리오에도 반영했다. 채용 사이트 이력서는 새로 내보내지 않았다.
+2026-11-15에 잡코리아와 사람인의 이력서를 저장하고 작성완료했다. 이후 개인 프로젝트 기술과 Stone Match 운영 대시보드 경험을 포트폴리오에도 반영했다. 2026-11-19에는 두 경력기술서에 GlucoInsight와 TagDo의 Hive 기술을 반영하고, Ego 브라우저 CLI로 항목별 저장과 전체 작성완료를 마쳤다. 두 사이트의 이력서 보기 화면에서 저장 결과를 확인했다. 채용 사이트 이력서는 새로 내보내지 않았다.
 
 - 자기소개서 제목은 `서비스의 문제를 풀고, 팀의 개발 방식까지 개선해 온 개발자`다. 소제목 없이 네 문단으로 두고, 역할에서 문제와 해결 방식으로 넘어가는 지점에 줄바꿈을 넣었다. 마무리는 팀과 해결책의 선택 이유와 검증 방법을 나누는 데 초점을 둔다.
-- 두 경력기술서의 맨 위에 `[개인 프로젝트]`를 추가했다. TagDo / HabitCell, Stone Match 운영 대시보드, SyncFlow, 무장애 관광 챗봇을 결과와 출시 상태 위주로 목록에 넣고, 기존 회사 경력은 유지했다. Stone Match의 기술 표기는 [문구 검증 기록](Front_Portfolio/docs/HTML_CLAIM_AUDIT.md#stone-match-운영-대시보드-근거-2026-11-15)을 따른다.
+- 두 경력기술서의 맨 위에 `[개인 프로젝트]`를 두고, TagDo / HabitCell → GlucoInsight → Stone Match 운영 대시보드 → SyncFlow → 무장애 관광 챗봇 순서로 정리했다. 기존 회사 경력과 나머지 프로젝트 내용은 유지했다. Stone Match의 기술 표기는 [문구 검증 기록](Front_Portfolio/docs/HTML_CLAIM_AUDIT.md#stone-match-운영-대시보드-근거-2026-11-15)을 따른다.
+- TagDo / HabitCell과 GlucoInsight에는 `Google Play와 App Store에 출시 및 운영`, `기획, 앱 개발, 백엔드 연동, 스토어 배포를 직접 담당`을 공통으로 적었다. TagDo / HabitCell의 주요 기술은 `Flutter, FastAPI, Hive(TagDo), MySQL 및 SQLite(HabitCell)`이다. GlucoInsight의 기능과 주요 기술을 포함한 [확정 문구와 확인 범위](Front_Portfolio/docs/HTML_CLAIM_AUDIT.md#채용-사이트-개인-프로젝트-확정-문구-2026-11-19)를 참고한다. 다른 이력서 항목은 변경하지 않았다.
 - 잡코리아는 스킬 20개 한도에서 Supabase, GA4, Sentry를 추가했다. PostgreSQL과 Cloudflare Pages는 경력기술서에 적었다. 사람인은 이 세 기술과 SQL, PostgreSQL, Cloudflare Pages를 스킬에 추가했다.
 - 사람인은 학력 두 건, 취업캠프의 Swift iOS, LLM 및 RAG, 경력 최신순 정렬을 확인했다. 재직월, 부서명과 첨부는 유지했고 TIQ는 추가하지 않았다. 사람인에 표시되는 합계는 13년 6개월이며, 포트폴리오의 13년 4개월 기준을 바꾸지 않는다.
 

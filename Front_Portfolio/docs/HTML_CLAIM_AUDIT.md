@@ -113,3 +113,25 @@ Unknown / remove
 - 운영 대시보드는 별도 `stomematch_dashboard` 저장소에서 JavaScript로 개발해 Cloudflare Pages에 배포했다. GA4 사용 지표와 Sentry 오류 및 릴리스 정보를 한 화면에서 조회한다. 대시보드 `README.md`와 게임의 `docs/plans/PLAN-011-ga4-behavior-analytics.md`가 근거다.
 - 잡코리아와 사람인 경력기술서는 초기 Supabase 연동과 대시보드 경험을 구분해 기록한다. 기술 스택에서는 Supabase를 강조하고 PocketBase는 생략했다. 운영 지표 수치나 효과는 주장하지 않는다.
 - 프론트엔드와 Unity 웹의 기술 스택과 Stone Match 카드, 두 슬라이드의 3장과 Stone Match 사례(프론트엔드 12장, Unity 10장)에 반영했다. 운영 화면은 로그인 뒤에 있으므로 포트폴리오에는 운영 대시보드 링크와 화면을 넣지 않았다.
+
+## 채용 사이트 개인 프로젝트 확정 문구 (2026-11-19)
+
+사용자가 확정한 문구를 잡코리아와 사람인 경력기술서의 `[개인 프로젝트]`에 반영했다. TagDo / HabitCell 다음에 GlucoInsight를 추가하고, 두 모바일 앱 항목의 출시 및 담당 문구를 통일했다. TagDo의 Hive는 사용자 제공 기술 정보로 보완했다.
+
+```text
+* TagDo / HabitCell | 모바일 앱
+- Google Play와 App Store에 출시 및 운영
+- 기획, 앱 개발, 백엔드 연동, 스토어 배포를 직접 담당
+- 주요 기술: Flutter, FastAPI, Hive(TagDo), MySQL 및 SQLite(HabitCell)
+
+* GlucoInsight | 모바일 앱
+- Google Play와 App Store에 출시 및 운영
+- 기획, 앱 개발, 백엔드 연동, 스토어 배포를 직접 담당
+- ML 기반 당뇨 위험도 참고 예측, 주변 병원 검색과 지도 앱 길 찾기 제공
+- 주요 기술: Flutter, FastAPI, ML, 공공데이터 API, 카카오 API
+```
+
+- GlucoInsight의 Android와 iOS 출시 완료는 2026-11-19 사용자 확인을 근거로 한다.
+- Ego 브라우저 CLI로 두 사이트의 항목별 저장과 전체 작성완료를 마쳤다. 저장된 이력서 보기 화면에서 위 기술 문구, GlucoInsight의 기능 설명과 순서를 확인했다. 공통 출시 및 담당 문구는 각각 두 번 표시됨을 확인했다.
+- Stone Match 운영 대시보드, SyncFlow, 무장애 관광 챗봇과 기존 회사 경력은 유지했다. 자기소개서 등 다른 항목도 변경하지 않았다. 사람인의 선택형 AI 커리어 소개 제안은 적용하지 않았다.
+- 이 기록은 채용 사이트 저장 결과다. 이력서 PDF를 새로 내보내거나 기존 로컬 PDF를 교체한 것은 아니다.
