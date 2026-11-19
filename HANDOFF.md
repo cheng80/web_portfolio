@@ -1,12 +1,13 @@
 # 다음 작업자를 위한 핸드오프
 
-상태 확인일: **2026-11-16**. 경로와 명령은 모두 저장소 루트 기준이다.
+상태 확인일: **2026-11-19**. 경로와 명령은 모두 저장소 루트 기준이다.
 
 ## 지금 상태
 
 김택권의 경력과 프로젝트를 소개하는 정적 HTML/CSS 포트폴리오다. 프론트엔드 우선 버전과 Unity 우선 버전을 각각 웹과 23장 슬라이드로 제공하며, 슬라이드에서 이미지 기반 PDF 2종을 생성한다. React/Vite 앱이 아니며 정적 사이트 준비와 검증에는 Python 표준 라이브러리만 사용한다.
 
 - 프론트엔드와 Unity 웹 및 슬라이드에 FastAPI, SQL, Firebase(FCM), Supabase(PostgreSQL), GA4, Sentry, Cloudflare Pages, JavaScript 등 개인 프로젝트 기술과 Stone Match 운영 대시보드 경험을 반영했다. 두 슬라이드의 23장 구성은 유지했다. 최신 공개 상태와 배포 커밋은 [GitHub Pages 실행 기록](https://github.com/cheng80/web_portfolio/actions/workflows/pages.yml?query=branch%3Amain)에서 확인한다.
+- GlucoInsight는 2026-11-19 사용자 확인에 따라 Android와 iOS 모두 출시 완료다. 프론트엔드와 Unity 웹 카드 및 슬라이드(프론트엔드 7장, Unity 18장)를 `Android / iOS 출시 완료`로 갱신했다. SyncFlow의 출시 준비 상태는 유지한다.
 - Unity 슬라이드 1~6페이지 문구와 16:9 제출용 PDF 23쪽은 `b0df14d`에서 갱신했다. 변경 페이지에 잘림과 겹침이 없었다.
 - 프론트엔드 웹의 첫 화면, 기술 카드, 대표 앱과 회사 프로젝트 소개를 갱신했다. 슬라이드 1, 3, 4, 18, 19페이지를 대조하고 16:9 PDF 23쪽을 다시 생성해 상위 폴더 사본도 교체했다. 변경 페이지에 잘림과 겹침이 없었고 사이트 테스트 4개가 통과했다.
 - 앞선 소개 문구 수정에서 Unity 웹의 첫 화면과 회사 프로젝트 소개는 기존 문구를 유지했다.
@@ -118,6 +119,13 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 | --- | ---: | --- |
 | 프론트엔드 | 5,993,064 | `172519fae7d05a6781f20fe151e87576019603361a1cf79ecd452601978ffb5a` |
 | Unity | 6,012,064 | `8178d68547238c2b3207c546b561a60e2a08a2d0e0e314d4abd04aefea637a66` |
+
+2026-11-19 GlucoInsight 출시 상태를 반영해 PDF 2종을 다시 생성했다. 각 23쪽과 변경 페이지의 잘림 및 겹침을 확인했고, 프로젝트 상위 폴더와 기존 Google Drive 파일을 교체한 뒤 실제 파일의 SHA-256이 `output/`과 일치함을 확인했다.
+
+| 최신 버전 | 파일 크기(바이트) | SHA-256 |
+| --- | ---: | --- |
+| 프론트엔드 | 5,993,448 | `e5c6601e125b50545af80c81313ac9fde92a1a21435e09ad0cc95732a1a7a112` |
+| Unity | 6,012,459 | `77f7fb144c77e6577ef20df16bcfb0ff479dca5eb97ad66d52a86d598a2ac15a` |
 
 ## 배포와 기존 주소
 

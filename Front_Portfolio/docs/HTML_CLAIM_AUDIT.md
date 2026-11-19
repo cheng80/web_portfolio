@@ -40,7 +40,7 @@ These are supported by the source documents and may remain in the deck.
 | `80여종 이상의 앱 제작, 출시 및 유지보수` | Latest resume |
 | TagDo description, stack, links | Portfolio PDF |
 | HabitCell description, stack, links | Portfolio PDF, with PDF title conflict corrected from TOC/features |
-| GlucoInsight description, stack, links, `출시 준비중(심사중)` | Portfolio PDF |
+| GlucoInsight description, stack, links | Portfolio PDF; Android and iOS release completion confirmed by the user on 2026-11-19 |
 | SyncFlow description, stack, GitHub, `출시 준비중` | Portfolio PDF |
 | 순서대로 탭탭 Flutter/Flame web demo and GitHub | Portfolio PDF |
 | Grovy / Chunjae project descriptions and video links | Portfolio PDF |
@@ -51,7 +51,7 @@ These are supported by the source documents and may remain in the deck.
 | Topic | Safe treatment |
 |---|---|
 | Flutter launched app count | Use latest resume wording only when saying launched/operated: `세 개의 모바일 앱`. Use portfolio PDF wording when saying app projects: `앱스토어 등록 프로젝트 4개`. |
-| GlucoInsight | Label as `출시 준비중(심사중)` unless a newer source is provided. |
+| GlucoInsight | Android and iOS both released, confirmed by the user on 2026-11-19. Use `Android / iOS 출시 완료`; preserve the Google Play and App Store links. |
 | SyncFlow | Label as `출시 준비중`. |
 | AI/RAG | Present as current project and training evidence. Do not claim years of production AI/RAG experience. |
 | Rummi Poker BIC | Say `BIC 출품` only. Do not say selected, awarded, exhibited, or winner unless later verified. |
