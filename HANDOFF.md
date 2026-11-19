@@ -121,6 +121,7 @@ python3 -c "from PIL import Image; print(Image.__version__)"
 | Unity | 6,012,064 | `8178d68547238c2b3207c546b561a60e2a08a2d0e0e314d4abd04aefea637a66` |
 
 2026-11-19 GlucoInsight 출시 상태를 반영해 PDF 2종을 다시 생성했다. 각 23쪽과 변경 페이지의 잘림 및 겹침을 확인했고, 프로젝트 상위 폴더와 기존 Google Drive 파일을 교체한 뒤 실제 파일의 SHA-256이 `output/`과 일치함을 확인했다.
+커밋 `d2310a9`의 [공개 배포](https://github.com/cheng80/web_portfolio/actions/runs/44476350022) 후에도 두 공개 PDF와 프로젝트 상위 폴더 및 Google Drive 사본의 실제 파일을 다시 읽어 대조했다. 각 버전의 크기와 SHA-256이 아래 최신 기록과 모두 일치했다.
 
 | 최신 버전 | 파일 크기(바이트) | SHA-256 |
 | --- | ---: | --- |
